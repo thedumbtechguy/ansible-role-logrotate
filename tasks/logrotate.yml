@@ -1,0 +1,22 @@
+---
+
+- name: ensure logrotate is installed
+  apt: 
+    name: logrotate 
+    state: present 
+    update_cache: true
+  become: true
+
+- name: ensure configuration scripts are installed
+  template:
+    src: conf.script.j2
+    dest: "{{ logrotate_conf_dir }}/{{ item.name }}"
+  when: item.state|default('present') == 'present'
+  with_items: "{{ logrotate_conf_scripts }}"
+
+- name: ensure configuration scripts are removed
+  file:
+    path: "{{ logrotate_conf_dir }}/{{ item.name }}"
+    state: absent
+  when: item.state|default('present') == 'absent'
+  with_items: "{{ logrotate_conf_scripts }}"

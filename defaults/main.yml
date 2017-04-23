@@ -1,0 +1,5 @@
+---
+
+
+logrotate_conf_dir: /etc/logrotate.d
+logrotate_conf_scripts: []

@@ -1,0 +1,5 @@
+---
+
+- include: logrotate.yml
+  tags:
+    - logrotate
