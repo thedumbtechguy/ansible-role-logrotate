@@ -64,11 +64,10 @@ MIT / BSD
 
 ## Author Information
 
-This role was created by [Stefan Froelich](https://thedumbtechguy.blogspot.com/).
+This role was created by [TheDumbTechGuy](https://github.com/thedumbtechguy) ( [twitter](https://twitter.com/frostymarvelous) | [blog](https://thedumbtechguy.blogspot.com) | [galaxy](https://galaxy.ansible.com/thedumbtechguy/) )
 
 ## Credits
 
 This role was built upon the original work of:
 
 - [nickjj/ansible-fail2ban](https://github.com/nickjj/ansible-fail2ban)
-
